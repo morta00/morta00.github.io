@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mortadha Ghnimi — MS AI @ GVSU. Computer vision, remote sensing, and production AI systems.">
+  <meta name="description" content="Mortadha Ghnimi — MS AI @ GVSU. Computer vision, remote sensing, RAG systems, and production ML for US internships.">
   <title>Mortadha Ghnimi — AI Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=16">
+  <link rel="stylesheet" href="css/style.css?v=17">
 </head>
 <body>
   <div class="bg-atmosphere" aria-hidden="true"></div>
@@ -29,14 +29,19 @@
 
   <header id="top" class="hero">
     <div class="hero-copy">
-      <p class="hero-kicker">MS Artificial Intelligence · GVSU · Grand Rapids, MI</p>
+      <p class="hero-kicker">MS Artificial Intelligence · GVSU · CPT available</p>
       <h1 class="hero-name">Mortadha Ghnimi</h1>
-      <p class="hero-line">I build AI systems people can use — from competition-winning vision models to production RAG in mobile apps.</p>
+      <p class="hero-line">
+        I work on machine learning that leaves the notebook: satellite imagery for forest health,
+        a first-place Kaggle vision ensemble, and a retrieval assistant running inside a live mobile app.
+      </p>
       <div class="hero-actions">
         <a href="#work" class="btn btn-primary">See selected work</a>
+        <a href="https://github.com/morta00" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/mortadha-ghnimi-021183252/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:ghnimim@mail.gvsu.edu" class="btn btn-ghost" id="email-btn" data-email="ghnimim@mail.gvsu.edu">Email</a>
       </div>
+      <p class="hero-availability">Open to AI / ML internships · Summer &amp; Fall 2026 · F-1 CPT (no sponsorship needed)</p>
     </div>
     <div class="hero-visual" aria-label="GymBox app preview">
       <div class="phone phone-main reveal">
@@ -56,9 +61,9 @@
   </section>
 
   <section id="work" class="section">
-    <p class="section-label">Selected work</p>
-    <h2 class="section-title">Projects that show how I ship</h2>
-    <p class="section-lead">Production AI, competition-winning vision models, and applied ML research.</p>
+    <p class="section-label">Work</p>
+    <h2 class="section-title">Selected projects</h2>
+    <p class="section-lead">Graduate research, a production RAG assistant, a Kaggle win, and cost-aware fraud modeling.</p>
 
     <!-- Graduate remote-sensing research -->
     <article class="project project-split reveal">
@@ -66,14 +71,14 @@
         <span class="tag">Graduate Research · Remote Sensing</span>
         <h3>Satellite forest &amp; crop health monitoring</h3>
         <p>
-          Ongoing graduate research at GVSU: detecting vegetation stress and disease from
-          multispectral satellite imagery — a scalable alternative to drone-based monitoring.
+          Graduate research at GVSU under Dr. Rahat Ibn Rafiq: detect vegetation stress from
+          multispectral satellite imagery so parks and farms can act earlier than drone-only monitoring allows.
         </p>
         <ul class="project-points">
-          <li>NDVI time-series pipelines for spatial + temporal satellite data</li>
-          <li>Random Forest baselines predicting expected canopy health, flagging anomalous drops</li>
-          <li>Google Earth Engine scripts pinpointing exact coordinates of stress zones in Michigan parks</li>
-          <li>Interactive stress maps for 2025 field seasons (Muskegon, Hoffmaster, Lake Forest)</li>
+          <li><strong>Method:</strong> NDVI time-series + Random Forest baselines that predict expected canopy health and flag anomalous drops</li>
+          <li><strong>Pipeline:</strong> Google Earth Engine scripts that map stress zones to exact coordinates in Michigan parks</li>
+          <li><strong>Result:</strong> interactive anomaly maps for 2025 field seasons (Muskegon, Hoffmaster, Lake Forest)</li>
+          <li><strong>Status:</strong> ongoing GA research — implementation private; selected results shown with approval</li>
         </ul>
         <div class="tech-row">
           <span>Python</span>
@@ -98,27 +103,28 @@
     <!-- GymBox featured -->
     <article class="gymbox-showcase">
       <div class="gymbox-intro">
-        <span class="tag">Internship · Smart It Partner</span>
-        <h3>GymBox</h3>
+        <span class="tag">Internship · Production AI</span>
+        <h3>GymBox + Box AI</h3>
         <p>
-          Mobile app for gym members: manage your subscription, open a digital access card
-          from your profile, and scan a QR code at the turnstile to enter.
+          During my internship at Smart It Partner I built <strong>Box AI</strong>, a retrieval-based
+          fitness coach that answers training and nutrition questions inside a React Native gym app
+          that members actually use.
         </p>
         <ul class="project-points">
-          <li>Active subscribers get a star on their profile — tap it to show a QR entry pass</li>
-          <li>QR acts as a digital membership card for gym turnstiles; screenshots are blocked for security</li>
-          <li>Box AI chat for training and nutrition questions (RAG)</li>
-          <li>Activity tracking (steps, distance, calories) plus an in-app shop</li>
+          <li>Built the AI coach end to end, from the chat interface to the backend it talks to</li>
+          <li>Wired member activity (steps, distance, calories) into the home experience</li>
+          <li>Shipped the rest of the app too: QR gym access, profile analytics, and the store</li>
+          <li>Worked across the mobile client (Expo, TypeScript) and the FastAPI service</li>
         </ul>
         <div class="tech-row">
           <span>React Native</span>
           <span>Expo</span>
-          <span>QR access</span>
-          <span>RAG / LLM</span>
           <span>TypeScript</span>
+          <span>RAG / LLM</span>
+          <span>FastAPI</span>
         </div>
         <a class="text-link" href="https://github.com/morta00/GymBox" target="_blank" rel="noopener">
-          View repository →
+          View GymBox repository →
         </a>
       </div>
 
@@ -255,49 +261,62 @@
       </div>
     </article>
 
-    <!-- Box AI repo card -->
-    <article class="project project-split reveal">
+    <!-- Box AI case study -->
+    <article class="project project-case reveal">
       <div class="project-meta">
-        <span class="tag">Backend · RAG</span>
-        <h3>Box AI</h3>
+        <span class="tag">GenAI · RAG System Design</span>
+        <h3>Box AI — production RAG coach</h3>
         <p>
-          FastAPI backend that powers the GymBox coach: retrieve relevant fitness content,
-          then generate answers with a Gemma model over a FAISS index.
+          The FastAPI service behind GymBox. It pulls the most relevant fitness and nutrition
+          context, then has Gemma write an answer grounded in that context. This ran as a real
+          product feature, not a one-off notebook.
         </p>
+
+        <div class="pipeline">
+          <div class="pipeline-step"><span>1</span><p>Domain docs</p></div>
+          <div class="pipeline-arrow" aria-hidden="true">→</div>
+          <div class="pipeline-step"><span>2</span><p>Chunk + embed</p></div>
+          <div class="pipeline-arrow" aria-hidden="true">→</div>
+          <div class="pipeline-step"><span>3</span><p>FAISS retrieve</p></div>
+          <div class="pipeline-arrow" aria-hidden="true">→</div>
+          <div class="pipeline-step"><span>4</span><p>Gemma generate</p></div>
+          <div class="pipeline-arrow" aria-hidden="true">→</div>
+          <div class="pipeline-step"><span>5</span><p>Mobile chat API</p></div>
+        </div>
+
         <ul class="project-points">
-          <li>RAG pipeline for training and nutrition questions</li>
-          <li>FAISS vector index over domain documents</li>
-          <li>Gemma as the generation model for chat replies</li>
-          <li>API used by the GymBox mobile client</li>
+          <li>Kept retrieval and generation as separate steps, so I can see which documents drove each answer</li>
+          <li>Indexed the fitness and nutrition knowledge base in FAISS for fast similarity search</li>
+          <li>Iterated on chunking and prompting when answers came back too generic</li>
+          <li>Served it behind a single FastAPI endpoint the mobile app calls</li>
         </ul>
+
+        <div class="case-grid">
+          <div class="case-card">
+            <h4>Design goals</h4>
+            <p>Answers grounded in real content, fast enough for a chat screen, and focused on fitness rather than open-ended chat.</p>
+          </div>
+          <div class="case-card">
+            <h4>What broke, and the fix</h4>
+            <p>The first version wandered off topic and gave generic advice. Narrowing the retrieval scope and rewriting the system prompt brought it back on track.</p>
+          </div>
+          <div class="case-card">
+            <h4>What I took from it</h4>
+            <p>Getting an LLM feature from idea to a working API that a real app depends on, and debugging it like any other system.</p>
+          </div>
+        </div>
+
         <div class="tech-row">
           <span>Python</span>
           <span>FastAPI</span>
           <span>FAISS</span>
           <span>Gemma</span>
           <span>RAG</span>
+          <span>Hugging Face</span>
         </div>
         <a class="text-link" href="https://github.com/morta00/BoxAi" target="_blank" rel="noopener">
-          View repository →
+          View Box AI repository →
         </a>
-      </div>
-      <div class="metric-panel">
-        <div class="metric-big">
-          <span class="metric-value">RAG</span>
-          <span class="metric-label">Retrieval</span>
-        </div>
-        <div class="metric-big">
-          <span class="metric-value">FAISS</span>
-          <span class="metric-label">Vector index</span>
-        </div>
-        <div class="metric-big">
-          <span class="metric-value">Gemma</span>
-          <span class="metric-label">LLM</span>
-        </div>
-        <div class="metric-big">
-          <span class="metric-value">API</span>
-          <span class="metric-label">FastAPI</span>
-        </div>
       </div>
     </article>
 
@@ -307,20 +326,21 @@
         <span class="tag">Kaggle Competition · 1st Place</span>
         <h3>Multiclass image classification</h3>
         <p>
-          I trained three CNNs from scratch to classify 16×16 RGB images. The final
-          ensemble reached 93.4% test accuracy and placed first in the competition.
+          I trained three CNNs from scratch on low-resolution RGB images, then ensembled them
+          to place <strong>1st</strong> with <strong>93.4%</strong> test accuracy.
         </p>
         <ul class="project-points">
-          <li>Upscaled the inputs to 32×32 before training</li>
-          <li>Used WideResNet-28-10, WideResNet-40-4, and ResNet-110</li>
-          <li>Added CutMix, Mixup, two rounds of pseudo-labeling, and 15-pass TTA</li>
-          <li>Selected the ensemble weights by grid search on the validation set</li>
+          <li>Upscaled 16×16 inputs to 32×32 before training</li>
+          <li>WideResNet-28-10, WideResNet-40-4, and ResNet-110 for model diversity</li>
+          <li>CutMix, Mixup, two-round pseudo-labeling, and 15-pass TTA</li>
+          <li>Set the ensemble weights with a grid search on the validation split</li>
         </ul>
         <div class="tech-row">
           <span>TensorFlow</span>
           <span>Keras</span>
           <span>CNN</span>
           <span>Ensemble</span>
+          <span>Computer Vision</span>
         </div>
         <a class="text-link" href="https://github.com/morta00/kaggle-multiclass-ensemble" target="_blank" rel="noopener">
           View repository →
@@ -338,9 +358,8 @@
         <span class="tag">Applied ML · Data Mining</span>
         <h3>Healthcare fraud detection</h3>
         <p>
-          Insurance fraud drives billions in losses every year. I built a cost-sensitive
-          model that flags fraudulent providers while optimizing for money saved — not just
-          raw accuracy.
+          Fraud detection for medical insurance claims, tuned around the cost of a wrong decision
+          rather than raw accuracy.
         </p>
         <div class="stat-chips">
           <div class="stat-chip">
@@ -363,8 +382,8 @@
         <ul class="project-points">
           <li>Benchmarked Logistic Regression, Random Forest, Gradient Boosting, and a neural network — GBM won</li>
           <li>Engineered 74 provider-level features from claims, beneficiaries, and reimbursement patterns</li>
-          <li>Added a cost-sensitive Bayesian decision layer so the model minimizes financial loss</li>
-          <li>Tackled severe class imbalance with strategic undersampling</li>
+          <li>Added a cost-sensitive Bayesian decision layer to minimize financial loss</li>
+          <li>Handled severe class imbalance with strategic undersampling</li>
         </ul>
         <div class="tech-row">
           <span>Python</span>
@@ -374,6 +393,7 @@
         </div>
         <p class="project-context">
           Team course project adapting Shi et al. (2023) to the Kaggle Healthcare Provider Fraud Detection dataset.
+          I contributed to modeling, evaluation, and analysis.
         </p>
         <a class="text-link" href="https://github.com/SoltanaMohamedIheb/DataMiningClassGroup15" target="_blank" rel="noopener">
           View team repository →
@@ -400,20 +420,20 @@
       <article class="timeline-item reveal">
         <p class="when">Jan 2026 — Present</p>
         <h3>Graduate Research Assistant</h3>
-        <p class="where">Grand Valley State University · Remote sensing & forest health</p>
+        <p class="where">Grand Valley State University · Remote sensing &amp; forest health</p>
         <p>Building NDVI time-series pipelines and ML baselines for vegetation stress detection from satellite imagery under Dr. Rahat Ibn Rafiq.</p>
       </article>
       <article class="timeline-item reveal">
         <p class="when">Jan — May 2025</p>
-        <h3>AI & Mobile Development Intern</h3>
+        <h3>AI &amp; Mobile Development Intern</h3>
         <p class="where">Smart It Partner · Tunis</p>
-        <p>Shipped Box AI coach, pedometer metrics, profile analytics, and recommendation features inside the GymBox React Native production app.</p>
+        <p>Shipped Box AI (RAG coach), pedometer metrics, profile analytics, and recommendation features inside the GymBox React Native production app.</p>
       </article>
       <article class="timeline-item reveal">
         <p class="when">Aug — Nov 2023</p>
         <h3>Technical Support Intern</h3>
         <p class="where">Tunisie Télécom · Bizerte</p>
-        <p>Security-focused diagnostics across 50+ network nodes and 15+ GB of daily traffic; anomaly baselines accelerated detection of abnormal behavior by 15%.</p>
+        <p>Security diagnostics across 50+ network nodes and 15+ GB of daily traffic; anomaly baselines accelerated detection of abnormal behavior by 15%.</p>
       </article>
     </div>
 
@@ -436,26 +456,25 @@
   <section id="about" class="section">
     <p class="section-label">About</p>
     <div class="about-layout">
-      <h2 class="section-title">Research-minded.<br>Product-aware.</h2>
+      <h2 class="section-title">A little about me</h2>
       <div class="about-copy">
         <p>
-          I’m an MS in Artificial Intelligence student at Grand Valley State University and a
-          top-ranked CS graduate from the Faculty of Science of Bizerte. I’ve already shipped a
-          production mobile app, won a Kaggle competition, and I’m now doing graduate research
-          in remote sensing — so I move comfortably between research notebooks and systems that
-          actually ship.
+          I’m an MS Artificial Intelligence student at Grand Valley State University, where I work as a
+          graduate research assistant on satellite-based forest health. Before that I finished top of my
+          class in Computer Science at the Faculty of Science of Bizerte and built a RAG assistant that
+          runs in a live fitness app.
         </p>
         <p>
-          I care about work that reaches real users: computer vision, GenAI systems with honest
-          evaluation, and models that earn their place in production — not demos that stop at
-          <code>model.fit()</code>.
+          My work sits around computer vision, retrieval-augmented generation, and remote sensing.
+          The part I enjoy most is what happens after training: evaluating honestly, and figuring out
+          what breaks once real users and real data show up.
         </p>
         <div class="availability">
           <p class="availability-title">Available for AI / ML internships</p>
           <ul class="availability-list">
             <li><strong>Start:</strong> Summer &amp; Fall 2026 (plus future terms through 2027)</li>
-            <li><strong>Work authorization:</strong> F-1 student on CPT — no sponsorship needed to intern</li>
-            <li><strong>Location:</strong> Grand Rapids, MI · open to relocation &amp; remote across the US</li>
+            <li><strong>Work authorization:</strong> F-1 student · CPT eligible — no sponsorship needed to intern</li>
+            <li><strong>Location:</strong> Grand Rapids, MI · open to US relocation &amp; remote</li>
           </ul>
         </div>
       </div>
@@ -463,7 +482,7 @@
     <div class="skills reveal">
       <div>
         <h4>Languages</h4>
-        <p>Python · SQL · TypeScript · Java · C++</p>
+        <p>Python · SQL · TypeScript · Java</p>
       </div>
       <div>
         <h4>ML &amp; Deep Learning</h4>
@@ -482,20 +501,21 @@
 
   <section id="contact" class="section contact">
     <p class="section-label">Contact</p>
-    <h2 class="section-title">Let’s talk</h2>
-    <p class="section-lead">Internships, research collaborations, or a quick chat about applied ML.</p>
+    <h2 class="section-title">Get in touch</h2>
+    <p class="section-lead">I’m looking for AI / ML internships at US companies and I’m glad to walk through any of these projects in detail.</p>
     <div class="contact-row">
       <a href="mailto:ghnimim@mail.gvsu.edu">ghnimim@mail.gvsu.edu</a>
       <a href="https://www.linkedin.com/in/mortadha-ghnimi-021183252/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/morta00" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/morta00/BoxAi" target="_blank" rel="noopener">Box AI repo</a>
       <a href="https://github.com/morta00/kaggle-multiclass-ensemble" target="_blank" rel="noopener">Kaggle repo</a>
     </div>
   </section>
 
   <footer class="footer">
-    <p>© 2026 Mortadha Ghnimi · Hosted on GitHub Pages</p>
+    <p>© 2026 Mortadha Ghnimi · <a href="https://morta00.github.io/">morta00.github.io</a></p>
   </footer>
 
-  <script src="js/main.js?v=4"></script>
+  <script src="js/main.js?v=5"></script>
 </body>
 </html>
