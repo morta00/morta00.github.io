@@ -3,519 +3,396 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mortadha Ghnimi — MS AI @ GVSU. Computer vision, remote sensing, RAG systems, and production ML for US internships.">
-  <title>Mortadha Ghnimi — AI Engineer</title>
+  <title>Mortadha Ghnimi | AI/ML Engineer & Graduate Researcher</title>
+  <meta name="description" content="AI/ML engineer and graduate researcher building agentic AI systems, computer vision models, geospatial ML, and high-performance AI systems.">
+  <meta property="og:title" content="Mortadha Ghnimi | AI/ML Engineer & Graduate Researcher">
+  <meta property="og:description" content="Agentic AI · Computer Vision · Geospatial AI · ML Systems">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://morta00.github.io/">
+  <meta property="og:image" content="https://morta00.github.io/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://morta00.github.io/assets/og-image.png">
+  <link rel="canonical" href="https://morta00.github.io/">
+  <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+  <meta name="theme-color" content="#f4f1e9">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=17">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/portfolio.css?v=20">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mortadha Ghnimi",
+    "jobTitle": "AI/ML Engineer & Graduate Researcher",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "Grand Valley State University"},
+    "url": "https://morta00.github.io/",
+    "sameAs": [
+      "https://github.com/morta00",
+      "https://www.linkedin.com/in/mortadha-ghnimi-021183252/"
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="css/geoagent.css?v=4">
+  <link rel="stylesheet" href="css/vision-case.css?v=1">
+  <link rel="stylesheet" href="css/cptk-case.css?v=2">
+  <link rel="stylesheet" href="css/systems-portfolio.css?v=2">
+  <link rel="stylesheet" href="css/career-polish.css?v=2">
 </head>
 <body>
-  <div class="bg-atmosphere" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <nav class="nav">
-    <a href="#top" class="nav-brand">Mortadha Ghnimi</a>
-    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span>
-    </button>
-    <div class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="https://github.com/morta00" class="nav-link-ext" target="_blank" rel="noopener">GitHub</a>
-    </div>
-  </nav>
-
-  <header id="top" class="hero">
-    <div class="hero-copy">
-      <p class="hero-kicker">MS Artificial Intelligence · GVSU · CPT available</p>
-      <h1 class="hero-name">Mortadha Ghnimi</h1>
-      <p class="hero-line">
-        I work on machine learning that leaves the notebook: satellite imagery for forest health,
-        a first-place Kaggle vision ensemble, and a retrieval assistant running inside a live mobile app.
-      </p>
-      <div class="hero-actions">
-        <a href="#work" class="btn btn-primary">See selected work</a>
-        <a href="https://github.com/morta00" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/mortadha-ghnimi-021183252/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:ghnimim@mail.gvsu.edu" class="btn btn-ghost" id="email-btn" data-email="ghnimim@mail.gvsu.edu">Email</a>
-      </div>
-      <p class="hero-availability">Open to AI / ML internships · Summer &amp; Fall 2026 · F-1 CPT (no sponsorship needed)</p>
-    </div>
-    <div class="hero-visual" aria-label="GymBox app preview">
-      <div class="phone phone-main reveal">
-        <img src="assets/gymbox/screens/home-dashboard.png" alt="GymBox home dashboard with activity metrics" loading="eager">
-      </div>
-      <div class="phone phone-side reveal delay-1">
-        <img src="assets/gymbox/screens/boxai.png" alt="Box AI fitness coach chat" loading="eager">
+  <header class="nav" id="site-header">
+    <a class="nav-brand" href="#top" aria-label="Mortadha Ghnimi, home"><img class="brand-mark" src="assets/brand/mg-monogram.svg" alt="" width="58" height="38"></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+    <div class="nav-panel" id="site-nav">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#work">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#play">Challenge</a>
+      </nav>
+      <div class="nav-side">
+        <a data-resume-link href="resume.html">Resume</a>
+        <a class="nav-contact" href="#contact">Contact</a>
       </div>
     </div>
   </header>
 
-  <section class="strip">
-    <div class="strip-item"><strong>1st</strong> Kaggle multiclass win</div>
-    <div class="strip-item"><strong>93.4%</strong> ensemble accuracy</div>
-    <div class="strip-item"><strong>GA</strong> remote sensing research</div>
-    <div class="strip-item"><strong>RAG</strong> shipped in production</div>
-  </section>
-
-  <section id="work" class="section">
-    <p class="section-label">Work</p>
-    <h2 class="section-title">Selected projects</h2>
-    <p class="section-lead">Graduate research, a production RAG assistant, a Kaggle win, and cost-aware fraud modeling.</p>
-
-    <!-- Graduate remote-sensing research -->
-    <article class="project project-split reveal">
-      <div class="project-meta">
-        <span class="tag">Graduate Research · Remote Sensing</span>
-        <h3>Satellite forest &amp; crop health monitoring</h3>
-        <p>
-          Graduate research at GVSU under Dr. Rahat Ibn Rafiq: detect vegetation stress from
-          multispectral satellite imagery so parks and farms can act earlier than drone-only monitoring allows.
-        </p>
-        <ul class="project-points">
-          <li><strong>Method:</strong> NDVI time-series + Random Forest baselines that predict expected canopy health and flag anomalous drops</li>
-          <li><strong>Pipeline:</strong> Google Earth Engine scripts that map stress zones to exact coordinates in Michigan parks</li>
-          <li><strong>Result:</strong> interactive anomaly maps for 2025 field seasons (Muskegon, Hoffmaster, Lake Forest)</li>
-          <li><strong>Status:</strong> ongoing GA research — implementation private; selected results shown with approval</li>
-        </ul>
-        <div class="tech-row">
-          <span>Python</span>
-          <span>Google Earth Engine</span>
-          <span>scikit-learn</span>
-          <span>Geospatial</span>
-          <span>Time series</span>
+  <main id="main">
+    <section class="hero-shell" id="top">
+      <div class="wrap hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Graduate researcher · Applied AI</p>
+          <h1>Mortadha<br><span>Ghnimi</span></h1><h2 class="hero-role">AI / Machine Learning Engineer</h2>
+          <p class="hero-academic">M.S. student in Artificial Intelligence at GVSU</p>
+          <p class="lede">I build and deploy AI applications, train computer vision models, and optimize machine learning systems. At GVSU, I research how satellite data can reveal early signs of vegetation stress.</p>
+          <p class="domains">Agentic AI <span>·</span> Computer Vision <span>·</span> Remote Sensing <span>·</span> ML Systems</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#work">View selected work</a>
+            <a class="btn btn-secondary" data-resume-link href="resume.html">Download resume (PDF)</a>
+          </div>
+          <div class="hero-socials" aria-label="Professional profiles and email">
+            <a href="https://github.com/morta00" target="_blank" rel="noopener noreferrer" aria-label="Mortadha on GitHub" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.72.4-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .94-.3 3.1 1.15a10.8 10.8 0 0 1 5.63 0c2.15-1.46 3.09-1.15 3.09-1.15.62 1.55.23 2.69.12 2.98.72.79 1.15 1.79 1.15 3.02 0 4.32-2.63 5.27-5.14 5.55.4.35.76 1.04.76 2.1v3.1c0 .3.2.65.77.54A11.25 11.25 0 0 0 12 .75Z"/></svg></a>
+            <a href="https://www.linkedin.com/in/mortadha-ghnimi-021183252/" target="_blank" rel="noopener noreferrer" aria-label="Mortadha on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.1-.02-2.53-1.54-2.53-1.54 0-1.78 1.2-1.78 2.45v4.73H9.53V9.2h2.83v1.3h.04c.39-.75 1.35-1.54 2.78-1.54 2.98 0 3.57 1.96 3.57 4.51v5.28Z"/></svg></a>
+            <a href="mailto:ghnimim@mail.gvsu.edu" aria-label="Email Mortadha" title="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 6 9 7 9-7"/></svg></a>
+          </div>
         </div>
-      </div>
-      <div class="media-slot">
-        <figure class="research-map">
-          <img src="assets/research/anomaly-overview.png" alt="Regional satellite map with detected forest anomalies highlighted in red" loading="lazy">
-          <figcaption>Regional anomaly detections</figcaption>
-        </figure>
-        <figure class="research-map">
-          <img src="assets/research/anomaly-detail.png" alt="Close-up satellite map of detected forest anomalies highlighted in red" loading="lazy">
-          <figcaption>Site-level anomaly detail</figcaption>
+        <figure class="hero-media">
+          <div class="hero-stage">
+            <img id="hero-portrait" src="assets/hero/pitch-presenting.png" alt="Mortadha Ghnimi presenting at a GVSU pitch competition" width="1024" height="682">
+          </div>
+          <figcaption class="hero-photo-caption"><span>Presenting at the GVSU Pitch Competition</span><strong>Finalist</strong></figcaption>
         </figure>
       </div>
-    </article>
+    </section>
 
-    <!-- GymBox featured -->
-    <article class="gymbox-showcase">
-      <div class="gymbox-intro">
-        <span class="tag">Internship · Production AI</span>
-        <h3>GymBox + Box AI</h3>
-        <p>
-          During my internship at Smart It Partner I built <strong>Box AI</strong>, a retrieval-based
-          fitness coach that answers training and nutrition questions inside a React Native gym app
-          that members actually use.
-        </p>
-        <ul class="project-points">
-          <li>Built the AI coach end to end, from the chat interface to the backend it talks to</li>
-          <li>Wired member activity (steps, distance, calories) into the home experience</li>
-          <li>Shipped the rest of the app too: QR gym access, profile analytics, and the store</li>
-          <li>Worked across the mobile client (Expo, TypeScript) and the FastAPI service</li>
-        </ul>
-        <div class="tech-row">
-          <span>React Native</span>
-          <span>Expo</span>
-          <span>TypeScript</span>
-          <span>RAG / LLM</span>
-          <span>FastAPI</span>
+
+    <section class="projects-showcase" id="work" aria-label="Selected projects">
+<section class="project-feature-screen project-first-screen" id="asjai" aria-labelledby="asjai-title">
+        <header class="wrap projects-showcase-head">
+        <div>
+          <p class="section-label">01 / Selected projects</p>
+          <h2>Selected Projects</h2>
         </div>
-        <a class="text-link" href="https://github.com/morta00/GymBox" target="_blank" rel="noopener">
-          View GymBox repository →
-        </a>
-      </div>
-
-      <div class="gymbox-stage">
-        <div class="gymbox-stage-bg" aria-hidden="true"></div>
-
-        <div class="gymbox-layout">
-          <figure class="device device-poster">
-            <div class="device-frame">
-              <img src="assets/gymbox/screens/boxai.png" alt="Box AI coach chat interface" loading="lazy">
+        <p>AI applications, research tools, and machine learning systems I’ve built.</p>
+      </header>
+<div class="wrap project-feature-grid project-feature-reverse">
+          <a class="cptk-preview" href="work/asjai.html?v=2" aria-label="Explore CPTK Secure AI Casting Companion">
+            <img src="assets/cptk/public-storefront.webp" alt="Actual CPTK public homepage showing Casting Pros To Know and its private digital companion" width="1200" height="750" loading="lazy">
+            <span class="cptk-preview-caption">CPTK / Explore the engineering case study <span aria-hidden="true">↗</span></span>
+          </a>
+          <div class="project-feature-copy">
+            <p class="cptk-card-result">181 directory records · 65 automated checks passed</p>
+            <h2 id="asjai-title">CPTK: Secure AI Casting Companion</h2>
+            <p class="project-feature-description">Developed for Asjai Lou Casting, CPTK transforms a casting guide into a private digital platform with source-grounded AI guidance, purchase-gated membership, and administrative data management.</p>
+            <div class="project-tech"><span>TypeScript</span><span>React</span><span>Cloudflare Workers</span><span>SQLite</span><span>Groq</span><span>RAG</span></div>
+            <a class="project-case-link" href="work/asjai.html?v=2">Explore the case study <span aria-hidden="true">↗</span></a>
+            <p class="cptk-private-note">Company project · Private source code</p>
+          </div>
+        </div>
+      </section>
+<section class="project-feature-screen" id="vision" aria-labelledby="vision-title">
+        <div class="wrap project-feature-grid">
+          <a class="vision-preview" href="work/kaggle.html" aria-label="Explore the first-place image classification project">
+            <span class="vision-preview-head">Kaggle · Multiclass Classification Challenge (10C-W26) <span aria-hidden="true">↗</span></span>
+            <img src="assets/kaggle/leaderboard.png" alt="Leaderboard for Multiclass Classification Challenge (10C-W26), showing Mortadha Ghnimi in first place with score 0.934" width="799" height="418" loading="lazy">
+            <span class="vision-preview-foot"><strong>1st Place</strong><span>93.4% Competition Test Accuracy</span></span>
+          </a>
+          <div class="project-feature-copy">
+            <p class="vision-card-result">1st Place <span>·</span> 93.4% Competition Test Accuracy</p>
+            <h2 id="vision-title">From-Scratch CNN Ensemble</h2>
+            <p class="project-feature-description">I trained a three-model CNN ensemble from scratch on 16×16 RGB images, without pretrained weights. I combined complementary predictions through pseudo-labeling, test-time augmentation, and weighted probability ensembling.</p>
+            <p class="vision-card-scope">Kaggle · Multiclass Classification Challenge (10C-W26)</p>
+            <div class="project-tech"><span>TensorFlow · Keras</span><span>WideResNet · ResNet</span><span>Computer Vision</span></div>
+            <a class="project-case-link" href="work/kaggle.html">Explore the project <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+<section class="project-feature-screen" id="geoagent" aria-labelledby="geoagent-title">      
+        <div class="wrap project-feature-grid">
+          <a class="geoagent-preview" href="work/geoagent.html" aria-label="Explore GeoAgent, a research workspace for satellite data">
+            <span class="geoagent-browserbar"><span class="geoagent-dots" aria-hidden="true">● ● ●</span><span>GeoAgent / Research workspace</span><span aria-hidden="true">↗</span></span>
+            <img src="assets/geoagent/overview.webp" alt="GeoAgent interface with three workflows: investigate a change, find supporting evidence, and understand a dataset" width="1440" height="1100" loading="lazy">
+            <span class="geoagent-preview-footer"><span>Real product interface</span><strong>Data → analysis → cited brief</strong></span>
+          </a>
+          <div class="project-feature-copy">
+            <p class="project-feature-category">AI workflows · Full-stack research tooling</p>
+            <h2 id="geoagent-title">GeoAgent</h2>
+            <p class="geoagent-home-tagline">From satellite observations to evidence you can inspect.</p>
+            <p class="project-feature-description">I built a research workbench that brings time-series data, papers, and analysis into one workflow. GeoAgent calculates site-level patterns, retrieves supporting passages, and assembles a cited brief with an inspectable execution trail.</p>
+            <p class="project-capabilities-label">Built into the workflow</p>
+            <ul class="project-capabilities">
+              <li>Computed statistics and time-series charts</li>
+              <li>Source-linked findings and report export</li>
+              <li>Review gates and recorded tool execution</li>
+            </ul>
+            <div class="project-tech"><span>React · TypeScript</span><span>FastAPI</span><span>LangGraph · MCP</span></div>
+            <a class="project-case-link" href="work/geoagent.html">Inside GeoAgent <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+<section class="project-feature-screen" id="gymbox"><div class="wrap project-feature-grid"><a class="mobile-showcase" href="work/gymbox.html" aria-label="Explore GymBox and BoxAI case study, screenshots, and recorded demonstrations"><span class="mobile-glow" aria-hidden="true"></span><figure class="phone-device phone-left"><img src="assets/gymbox/screens/home-dashboard.png" alt="GymBox activity dashboard" loading="lazy"></figure><figure class="phone-device phone-center"><img src="assets/gymbox/screens/boxai.png" alt="BoxAI fitness question and answer in the mobile app" loading="lazy"></figure><figure class="phone-device phone-right"><img src="assets/gymbox/screens/home.png" alt="BoxAI exercise and meal recommendation cards" loading="lazy"></figure><span class="mobile-caption">Original app screens · Recorded demos <span aria-hidden="true">↗</span></span></a><div class="project-feature-copy"><p class="project-feature-category">Mobile development · Applied AI</p><h2>GymBox + BoxAI</h2><p class="project-feature-description">AI coaching inside a mobile fitness app. I built BoxAI’s FastAPI backend and React Native integration, combining fitness knowledge retrieval with conversational guidance and profile-based exercise and meal recommendations.</p><p class="project-capabilities-label">My engineering contribution</p><ul class="project-capabilities"><li>FAISS retrieval + Gemma-powered Q&amp;A</li><li>Profile → structured workout and meal cards</li><li>AI backend connected to the mobile experience</li></ul><div class="project-tech"><span>React Native</span><span>FastAPI · LangChain</span><span>FAISS · Groq</span></div><a class="project-case-link" href="work/gymbox.html">Explore the project <span aria-hidden="true">↗</span></a></div></div></section>
+<section class="project-more-screen" id="engineering" aria-labelledby="more-work-title">
+        <div class="wrap project-more-inner">
+          <header class="project-more-heading">
+            <p class="project-feature-category">Applied ML &amp; Performance</p>
+            <h2 id="more-work-title">Better models. Faster systems.</h2>
+            <p class="section-focus-description">Two complementary strengths: faster ML computation and cost-aware predictive modeling.</p>
+          </header>
+          <div class="engineering-gallery engineering-gallery-two">
+            <a class="engineering-card systems-summary-card" id="autoencoder" href="work/ml-systems.html"><span id="hpc" class="systems-anchor"></span><div class="engineering-visual architecture-thumb"><img src="assets/cards/autoencoder.svg" alt="Autoencoder architecture with a sparse input layer and dense reconstruction" loading="lazy"></div><div class="engineering-copy"><p class="project-feature-category">01 / ML systems engineering</p><h3>ML Systems Optimization</h3><p>I optimized two CPU workloads: a sparse ML kernel and a complete autoencoder training epoch. The shared engineering story is memory layout, SIMD, parallelism, and correctness.</p><div class="systems-card-metrics"><span><strong>24.73×</strong> autoencoder epoch</span><span><strong>68.78×</strong> recorded kernel run</span></div><div class="engineering-bottom"><span>C++ · AVX · OpenMP</span><strong>Explore the engineering ↗</strong></div></div></a>
+            <a class="engineering-card" id="fraud" href="work/fraud.html"><div class="engineering-visual result-thumb"><img src="assets/fraud/roc-curves.png" alt="Actual study ROC curves comparing healthcare fraud classifiers" loading="lazy"><span>0.946 reported study ROC-AUC</span></div><div class="engineering-copy"><p class="project-feature-category">02 / Cost-sensitive machine learning</p><h3>Healthcare Fraud Detection</h3><p>I worked with my team to turn claims data into provider-level risk signals, comparing four classifiers and balancing missed fraud against investigation cost.</p><div class="systems-card-metrics"><span><strong>74</strong> engineered features</span><span><strong>200</strong> evaluated model fits</span></div><div class="engineering-bottom"><span>Python · scikit-learn · PCA</span><strong>Explore the study ↗</strong></div></div></a>
+          </div>
+        </div>
+      </section>
+</section>
+<section class="build-section"><div class="wrap"><header class="center-head"><h2>What I Build</h2><p>Applied AI, machine learning, and research systems.</p></header>        <div class="expertise-cards" aria-label="Areas of expertise">
+          <article class="expertise-card expertise-card-featured">
+            <div class="expertise-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 3h6v3h2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3h-2v3H9v-3H7a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h2V3Zm0 6H7v6h2v-2h2v2h2v-2h2v2h2V9h-2v2h-2V9h-2v2H9V9Z"/></svg>
             </div>
-            <figcaption>
-              <span class="device-label">Box AI</span>
-              <span class="device-desc">RAG fitness coach</span>
-            </figcaption>
-          </figure>
+            <span class="expertise-number">01</span>
+            <h3>Agentic & Applied AI</h3>
+            <p>LLM agents, retrieval, tool use, workflow automation, APIs, and human-in-the-loop systems.</p>
+            <div class="expertise-line"><span>CORE FOCUS</span><i></i></div>
+          </article>
 
-          <div class="cinema">
-            <p class="cinema-label">Product demo</p>
-            <div class="cinema-screen" id="gymbox-screen">
-              <video
-                id="gymbox-video"
-                controls
-                muted
-                playsinline
-                preload="auto"
-                poster="assets/gymbox/screens/boxai.png"
-                src="assets/gymbox/videos/gymbox-boxai-chat.mp4"
-              ></video>
+          <article class="expertise-card">
+            <div class="expertise-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 4h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-5v2h3v2H7v-2h3v-2H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm2 3v6h10V7H7Zm2 1h2v4H9V8Zm4 0h2v2h-2V8Z"/></svg>
             </div>
-          </div>
+            <span class="expertise-number">02</span>
+            <h3>Machine Learning & Vision</h3>
+            <p>Deep learning, computer vision, data science, model evaluation, and experimentation under real constraints.</p>
+            <div class="expertise-line"><span>MODELS + EVALUATION</span><i></i></div>
+          </article>
 
-          <figure class="device device-poster" id="gymbox-preview">
-            <div class="device-frame">
-              <img
-                id="gymbox-preview-img"
-                src="assets/gymbox/screens/boxai.png"
-                alt="Box AI coach chat"
-                loading="lazy"
-              >
+          <article class="expertise-card">
+            <div class="expertise-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 5h16v4H4V5Zm2 6h12v3H6v-3Zm2 5h8v3H8v-3Z"/></svg>
             </div>
-            <figcaption>
-              <span class="device-label" id="gymbox-preview-label">Box AI</span>
-              <span class="device-desc" id="gymbox-preview-desc">RAG fitness coach</span>
-            </figcaption>
-          </figure>
+            <span class="expertise-number">03</span>
+            <h3>AI Systems & Geospatial Research</h3>
+            <p>High-performance ML, temporal modeling, remote sensing, multimodal data, and research-grade pipelines.</p>
+            <div class="expertise-line"><span>SYSTEMS + RESEARCH</span><i></i></div>
+          </article>
         </div>
 
-        <div class="gymbox-tabs" id="gymbox-tabs">
-          <div class="seg-control" role="tablist" aria-label="GymBox demos">
-            <button
-              type="button"
-              class="seg-btn is-active"
-              role="tab"
-              aria-selected="true"
-              aria-controls="gymbox-screen"
-              data-src="assets/gymbox/videos/gymbox-boxai-chat.mp4"
-              data-poster="assets/gymbox/screens/boxai.png"
-              data-preview-src="assets/gymbox/screens/boxai.png"
-              data-preview-alt="Box AI coach chat"
-              data-preview-label="Box AI"
-              data-preview-desc="RAG fitness coach"
-            >Box AI chat</button>
-            <button
-              type="button"
-              class="seg-btn"
-              role="tab"
-              aria-selected="false"
-              aria-controls="gymbox-screen"
-              data-src="assets/gymbox/videos/gymbox-demo-1.mp4"
-              data-poster="assets/gymbox/screens/home-dashboard.png"
-              data-preview-src="assets/gymbox/screens/home-dashboard.png"
-              data-preview-alt="GymBox home dashboard"
-              data-preview-label="Home"
-              data-preview-desc="Steps · km · calories"
-            >App flow</button>
-            <button
-              type="button"
-              class="seg-btn"
-              role="tab"
-              aria-selected="false"
-              aria-controls="gymbox-screen"
-              data-src="assets/gymbox/videos/gymbox-demo-2.mp4"
-              data-poster="assets/gymbox/screens/onboarding.png"
-              data-preview-src="assets/gymbox/screens/onboarding.png"
-              data-preview-alt="GymBox onboarding profile setup"
-              data-preview-label="Onboarding"
-              data-preview-desc="New member setup"
-            >Onboarding</button>
-          </div>
-        </div>
+</div></section>
 
-        <div class="gallery">
-          <p class="gallery-title">More screens</p>
-          <div class="gallery-track">
-            <figure class="gallery-card">
-              <div class="device-frame device-frame-sm">
-                <img src="assets/gymbox/screens/boutique.png" alt="Boutique catalog" loading="lazy">
+    <section class="research-portfolio research-sequence" aria-label="Research and publications">
+      <section class="research-screen-v10" id="research" aria-labelledby="satellite-section-title">
+        <div class="wrap research-screen-inner">
+          <header class="research-screen-head">
+            <div>
+              <p class="section-label">02 / Current research</p>
+              <h2 id="satellite-section-title">Monitoring vegetation stress from space.</h2>
+            </div>
+            <p>Exploring whether satellite time series can extend drone-based forest monitoring.</p>
+          </header>
+          <article class="research-feature-card" aria-labelledby="satellite-title">
+            <div class="research-feature-image">
+              <img src="assets/research/anomaly-overview.png" alt="Satellite overview highlighting vegetation anomalies along the coast" loading="lazy">
+              <figure class="research-feature-inset">
+                <img src="assets/research/anomaly-detail.png" alt="Closer view of pixel-level vegetation anomalies" loading="lazy">
+                <figcaption>Pixel-level detail</figcaption>
+              </figure>
+              <span class="research-map-label">SATELLITE ANALYSIS · RESEARCH OUTPUT</span><span class="research-image-caption">Red markers highlight vegetation anomalies.</span>
+            </div>
+            <div class="research-feature-copy">
+              <div class="research-card-kicker"><span class="research-live-dot"></span> Graduate research · In progress</div>
+              <h3 id="satellite-title">Finding changes worth investigating.</h3>
+              <div class="research-story research-story-clean"><div><span class="research-story-label">The goal</span><p>Investigate whether satellite time series can flag vegetation anomalies that correspond to drone observations.</p></div><div><span class="research-story-label">My contribution</span><p>Built a time-series pipeline that estimates expected NDVI and maps unusual departures. I test Random Forest alone against the same model augmented with frozen Presto embeddings.</p></div></div>
+              <div class="research-facts" aria-label="Research setup">
+                <span><small>Train + validate</small><strong>2022–2025</strong></span>
+                <span><small>Unseen test</small><strong>2026</strong></span>
+                <span><small>Study scale</small><strong>12,000 pixels · 4 parks</strong></span>
               </div>
-              <figcaption>Boutique</figcaption>
-            </figure>
-            <figure class="gallery-card">
-              <div class="device-frame device-frame-sm">
-                <img src="assets/gymbox/screens/product.png" alt="Product detail" loading="lazy">
-              </div>
-              <figcaption>Product</figcaption>
-            </figure>
-            <figure class="gallery-card">
-              <div class="device-frame device-frame-sm">
-                <img src="assets/gymbox/screens/cart.png" alt="Shopping cart" loading="lazy">
-              </div>
-              <figcaption>Cart</figcaption>
-            </figure>
-            <figure class="gallery-card">
-              <div class="device-frame device-frame-sm">
-                <img src="assets/gymbox/screens/boxai.png" alt="Box AI chat" loading="lazy">
-              </div>
-              <figcaption>Box AI</figcaption>
-            </figure>
-            <figure class="gallery-card">
-              <div class="device-frame device-frame-sm">
-                <img src="assets/gymbox/screens/home-dashboard.png" alt="Home dashboard" loading="lazy">
-              </div>
-              <figcaption>Home</figcaption>
-            </figure>
-            <figure class="gallery-card">
-              <div class="device-frame device-frame-sm">
-                <img src="assets/gymbox/screens/profile-dashboard.png" alt="Profile weekly activity chart" loading="lazy">
-              </div>
-              <figcaption>Profile</figcaption>
-            </figure>
+              <div class="research-finding research-next-focus"><span>Next step</span><p>Fine-tune Presto for vegetation-stress monitoring.</p></div><a class="research-model-tag" href="https://github.com/nasaharvest/presto" target="_blank" rel="noopener noreferrer" aria-label="Presto by NASA Harvest, official model repository">Presto · NASA Harvest <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="publication-screen-v10" id="publication" aria-labelledby="publication-title">
+        <div class="wrap publication-screen-inner">
+          <header class="publication-screen-head">
+            <div>
+              <p class="section-label">03 / Published research</p>
+              <h2>Explaining medical AI.</h2>
+            </div>
+            <span class="publication-venue">Springer · ICR’26 · Berlin</span>
+          </header>
+          <article class="research-paper-card research-paper-card-v10">
+            <div class="paper-main-copy">
+              <p class="paper-peer-label">Peer-reviewed publication</p>
+              <h3 id="publication-title">Towards Clinically Interpretable Heart Disease Prediction</h3>
+              <p class="research-paper-subtitle">A comparative analysis of explainability methods for machine learning models.</p>
+              <p class="research-paper-authors">Firas Frouja · Mahdi Bedoui · <strong>Mortadha Ghnimi</strong></p>
+              <p class="research-paper-summary">Can different explanation methods agree on what drives a prediction? Our study compares SHAP and LIME across four classifiers to examine consistency in heart-disease risk explanations.</p><div class="publication-topics"><span>Explainable AI</span><span>SHAP + LIME</span><span>4 classifiers</span></div>
+              <a class="research-paper-link" href="https://doi.org/10.1007/978-3-032-32636-2_26" target="_blank" rel="noopener noreferrer">Read the paper <span aria-hidden="true">↗</span></a>
+            </div>
+            <a class="publication-cover-stage" href="https://link.springer.com/book/10.1007/978-3-032-32636-2" target="_blank" rel="noopener noreferrer" aria-label="View the Springer ICR 2026 proceedings"><span class="publication-cover-tag">PUBLISHED IN THE PROCEEDINGS</span><img src="assets/publication/icr26-cover.jpg" alt="Official cover of Proceedings of the Fifth International Conference on Innovations in Computing Research, Springer" loading="lazy"><span class="publication-cover-caption">Lecture Notes in Networks and Systems<br><strong>Volume 2074 · Chapter 26 · pp. 305–314 ↗</strong></span></a>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section class="clean-experience" id="experience">
+      <div class="wrap clean-section">
+        <header class="clean-section-head">
+          <p class="section-label">04 / Experience</p>
+          <div class="clean-title-row">
+            <h2>Experience</h2>
+            <p>Building useful systems, from applied AI products to satellite research.</p>
           </div>
+        </header>
+
+        <div class="experience-timeline">
+<details class="experience-card experience-accordion" open><span class="experience-node" aria-hidden="true">01</span><summary><div class="experience-card-top"><p>Graduate research · Current</p><span class="experience-date">2026–Present</span></div><h3>Graduate Research Assistant</h3><p class="experience-organization">Grand Valley State University <span>·</span> Grand Rapids, MI</p><span class="experience-expand" aria-hidden="true">+</span></summary><div class="experience-body"><p class="experience-description">Built a satellite time-series pipeline across 12,000 pixels in four parks. I compare Random Forest estimates with Presto-augmented estimates, reserving 2026 for unseen-year evaluation.</p>
+            <div class="experience-tags"><span>Satellite time series</span><span>Vegetation monitoring</span><span>Temporal representations</span></div>
+            <a class="experience-link" href="#research">See current research <span aria-hidden="true">↑</span></a>
+          </div></details>
+<details class="experience-card experience-accordion"><span class="experience-node" aria-hidden="true">02</span><summary><div class="experience-card-top"><p>Applied AI</p><span class="experience-date">2026</span></div><h3>AI & Automation Intern</h3><p class="experience-organization">Asjai Lou Casting <span>·</span> Remote / New York</p><span class="experience-expand" aria-hidden="true">+</span></summary><div class="experience-body"><p class="experience-description">Built CPTK’s member application, source-grounded RAG, admin tools, and transactional account activation. Imported 181 records and verified 65 automated checks. Purchase workflows are tested with synthetic orders; live payment and email connections are pending.</p>
+            <div class="experience-tags"><span>APIs + webhooks</span><span>Commerce automation</span><span>Grounded RAG</span></div>
+            <a class="experience-link" href="work/asjai.html">View the platform case study <span aria-hidden="true">↗</span></a>
+          </div></details>
+<details class="experience-card experience-accordion"><span class="experience-node" aria-hidden="true">03</span><summary><div class="experience-card-top"><p>Product engineering</p><span class="experience-date">2025</span></div><h3>AI & Mobile Developer</h3><p class="experience-organization">Smart It Partner <span>·</span> Tunis</p><span class="experience-expand" aria-hidden="true">+</span></summary><div class="experience-body"><p class="experience-description">Built BoxAI’s FastAPI service and connected retrieval-based Q&amp;A and profile-based recommendations to GymBox’s React Native app. I also contributed member-facing screens and developed a separate wildlife-classification system.</p>
+            <div class="experience-tags"><span>RAG systems</span><span>Recommendations</span><span>Computer vision</span></div>
+            <a class="experience-link" href="work/gymbox.html">Explore related work <span aria-hidden="true">↗</span></a>
+          </div></details>
+<details class="experience-card experience-accordion"><span class="experience-node" aria-hidden="true">04</span><summary><div class="experience-card-top"><p>Network intelligence</p><span class="experience-date">Aug–Nov 2023</span></div><h3>Data Analyst · Network Monitoring</h3><p class="experience-organization">Tunisie Telecom <span>·</span> Tunisia</p><span class="experience-expand" aria-hidden="true">+</span></summary><div class="experience-body"><p class="experience-description">Analyzed network-monitoring data to identify service issues, unusual traffic patterns, and signs of potential attacks. Turned operational signals into clear findings to support troubleshooting and network-security investigations.</p><div class="experience-tags"><span>Network monitoring</span><span>Anomaly analysis</span><span>Security signals</span></div></div></details>
         </div>
       </div>
-    </article>
+    </section>
 
-    <!-- Box AI case study -->
-    <article class="project project-case reveal">
-      <div class="project-meta">
-        <span class="tag">GenAI · RAG System Design</span>
-        <h3>Box AI — production RAG coach</h3>
-        <p>
-          The FastAPI service behind GymBox. It pulls the most relevant fitness and nutrition
-          context, then has Gemma write an answer grounded in that context. This ran as a real
-          product feature, not a one-off notebook.
-        </p>
+    <section class="expertise-shell" id="about">
+      <div class="wrap expertise-section">
+        <header class="expertise-head">
+          <p class="section-label">05 / Skills & Expertise</p>
+          <h2>Skills & Expertise</h2>
+          <p>A focused technical profile across intelligent systems, machine learning, and research engineering.</p>
+        </header>
 
-        <div class="pipeline">
-          <div class="pipeline-step"><span>1</span><p>Domain docs</p></div>
-          <div class="pipeline-arrow" aria-hidden="true">→</div>
-          <div class="pipeline-step"><span>2</span><p>Chunk + embed</p></div>
-          <div class="pipeline-arrow" aria-hidden="true">→</div>
-          <div class="pipeline-step"><span>3</span><p>FAISS retrieve</p></div>
-          <div class="pipeline-arrow" aria-hidden="true">→</div>
-          <div class="pipeline-step"><span>4</span><p>Gemma generate</p></div>
-          <div class="pipeline-arrow" aria-hidden="true">→</div>
-          <div class="pipeline-step"><span>5</span><p>Mobile chat API</p></div>
+<div class="terminal-grid"><article class="terminal-window"><header class="terminal-bar"><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>models.py</span><span class="terminal-language">AI / ML</span></header><pre><code><span class="code-comment"># model development</span>
+<span class="code-key">import</span> <span class="code-name">torch</span>, <span class="code-name">tensorflow</span>
+<span class="code-key">import</span> <span class="code-name">sklearn</span>, <span class="code-name">xgboost</span>, <span class="code-name">lightgbm</span>
+ 
+<span class="code-comment"># evaluation & explainability</span>
+<span class="code-key">import</span> <span class="code-name">shap</span>, <span class="code-name">lime</span>
+evaluation = [<span class="code-string">"Cross-validation"</span>, <span class="code-string">"ROC-AUC"</span>, <span class="code-string">"F1"</span>]
+modeling = [<span class="code-string">"Vision"</span>, <span class="code-string">"Feature engineering"</span>]
+ 
+<span class="code-comment"># language models, agents & retrieval</span>
+<span class="code-key">import</span> <span class="code-name">langgraph</span>, <span class="code-name">langchain</span>, <span class="code-name">faiss</span>
+workflows = [<span class="code-string">"RAG"</span>, <span class="code-string">"Embeddings"</span>, <span class="code-string">"Tool use"</span>]</code></pre><div class="terminal-footer"><span class="terminal-prompt">❯</span> Train, evaluate, explain, and connect models<span class="terminal-cursor" aria-hidden="true"></span></div></article><article class="terminal-window"><header class="terminal-bar"><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>systems.py</span><span class="terminal-language">Python / C++</span></header><pre><code><span class="code-comment"># data pipelines & earth observation</span>
+<span class="code-key">import</span> <span class="code-name">pandas</span>, <span class="code-name">numpy</span>, <span class="code-name">ee</span>
+ 
+<span class="code-comment"># APIs, tools & deployment</span>
+<span class="code-key">from</span> fastapi <span class="code-key">import</span> <span class="code-name">FastAPI</span>
+services = [<span class="code-string">"REST APIs"</span>, <span class="code-string">"Webhooks"</span>, <span class="code-string">"MCP"</span>]
+storage = [<span class="code-string">"SQL"</span>, <span class="code-string">"PostgreSQL"</span>, <span class="code-string">"pgvector"</span>]
+delivery = [<span class="code-string">"Docker"</span>, <span class="code-string">"Git"</span>]
+ 
+<span class="code-comment"># performance & reliable evaluation</span>
+languages = [<span class="code-string">"Python"</span>, <span class="code-string">"C++"</span>]
+compute = [<span class="code-string">"OpenMP"</span>, <span class="code-string">"SIMD"</span>, <span class="code-string">"Sparse kernels"</span>]
+validation = [<span class="code-string">"Temporal splits"</span>, <span class="code-string">"Leakage checks"</span>]</code></pre><div class="terminal-footer"><span class="terminal-prompt">❯</span> Build APIs, ship services, and accelerate workloads<span class="terminal-cursor" aria-hidden="true"></span></div></article></div>      </div>
+    </section>
+<span id="recognition" class="recognition-anchor" aria-hidden="true"></span>
+<section class="education-screen" id="education" aria-labelledby="education-title">
+      <div class="wrap education-layout">
+        <header class="education-intro">
+          <p class="section-label">06 / Education</p>
+          <h2 id="education-title">From computer science<br>to AI engineering.</h2>
+          <p>A foundation in computer science, advanced through graduate AI study and applied research.</p>
+        </header>
+        <ol class="education-timeline">
+          <li><span class="education-node" aria-hidden="true"></span><article class="education-card">
+            <div class="education-card-top"><span class="education-level">Graduate study</span><span class="education-date">2026–2027</span></div>
+            <h3>M.S. in Artificial Intelligence</h3>
+            <p class="education-school">Grand Valley State University</p>
+            <div class="education-detail"><span class="education-badge">In progress</span><span>Expected graduation: Fall 2027</span></div>
+            <p class="education-summary">Merit-supported graduate assistantship, with research in satellite-based vegetation monitoring and applied machine learning.</p>
+          </article></li>
+          <li><span class="education-node" aria-hidden="true"></span><article class="education-card">
+            <div class="education-card-top"><span class="education-level">Undergraduate foundation</span><span class="education-date">2022–2025</span></div>
+            <h3>B.S. in Computer Science</h3>
+            <p class="education-school">University of Carthage</p>
+            <p class="education-location">Faculty of Sciences of Bizerte</p>
+            <div class="education-honor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="m8 12-2 9 6-3 6 3-2-9"/></svg><div><strong>Ranked first across all undergraduate years</strong><span>Graduated in 2025</span></div></div>
+          </article></li>
+        </ol>
+      </div>
+    </section>
+
+    
+    
+
+<section class="portfolio-play game-page-v4" id="play" data-embedded-games aria-labelledby="play-title">
+      <span id="challenge" class="challenge-anchor" aria-hidden="true"></span>
+      <div class="wrap portfolio-play-inner">
+        <header class="portfolio-play-head">
+          <div><p class="section-label">Play against my AI</p><h2 id="play-title">Can you beat my AI?</h2></div>
+          <p>One board. Two players. Four in a row. You make the first move.</p>
+        </header>
+        <div class="game-stage-v4">
+<section class="game-panel-wrap is-active" id="panel-hard" aria-labelledby="connect-title">
+            <div class="connect-instructions" aria-labelledby="connect-title">
+              <div class="connect-rules-title"><h3 id="connect-title">Connect Four</h3><span>How to play</span></div>
+              <ol class="connect-rules">
+                <li><span class="rule-number" aria-hidden="true">01</span><div><strong>Choose a column</strong><p>Click any space in an open column.</p></div></li>
+                <li><span class="rule-number" aria-hidden="true">02</span><div><strong>Drop your piece</strong><p>Your cream piece falls to the lowest space.</p></div></li>
+                <li><span class="rule-number" aria-hidden="true">03</span><div><strong>Make a line of four</strong><p>Across, down, or diagonally. Beat the green AI.</p></div></li>
+              </ol>
+            </div>
+            <div class="game-board-frame connect-frame">
+              <div class="connect-main"><div class="connect-board" id="connect-board" role="grid" aria-label="Connect Four board"></div><div class="game-legend" aria-hidden="true"><span><i class="game-dot human"></i>You</span><span><i class="game-dot ai"></i>AI</span></div></div>
+              <aside class="game-side-panel">
+                <div><p class="game-kicker">Live match</p><h4 id="game-status" aria-live="polite">Your move.</h4><p>You play first. Pick a column and make your move.</p></div>
+                <div class="score-grid"><span><small>You</small><b id="human-score">0</b></span><span><small>AI</small><b id="ai-score">0</b></span></div>
+                <div class="game-result" id="game-result" aria-live="polite"></div>
+                <div class="game-side-actions"><button class="btn btn-secondary" id="restart-game" type="button">Play again</button></div><details class="connect-ai-note"><summary>How the AI plays</summary><p>It searches five moves ahead with minimax, uses alpha-beta pruning to skip unnecessary branches, and weighs threats on the board.</p></details>
+              </aside>
+            </div>
+          </section>
         </div>
-
-        <ul class="project-points">
-          <li>Kept retrieval and generation as separate steps, so I can see which documents drove each answer</li>
-          <li>Indexed the fitness and nutrition knowledge base in FAISS for fast similarity search</li>
-          <li>Iterated on chunking and prompting when answers came back too generic</li>
-          <li>Served it behind a single FastAPI endpoint the mobile app calls</li>
-        </ul>
-
-        <div class="case-grid">
-          <div class="case-card">
-            <h4>Design goals</h4>
-            <p>Answers grounded in real content, fast enough for a chat screen, and focused on fitness rather than open-ended chat.</p>
-          </div>
-          <div class="case-card">
-            <h4>What broke, and the fix</h4>
-            <p>The first version wandered off topic and gave generic advice. Narrowing the retrieval scope and rewriting the system prompt brought it back on track.</p>
-          </div>
-          <div class="case-card">
-            <h4>What I took from it</h4>
-            <p>Getting an LLM feature from idea to a working API that a real app depends on, and debugging it like any other system.</p>
-          </div>
-        </div>
-
-        <div class="tech-row">
-          <span>Python</span>
-          <span>FastAPI</span>
-          <span>FAISS</span>
-          <span>Gemma</span>
-          <span>RAG</span>
-          <span>Hugging Face</span>
-        </div>
-        <a class="text-link" href="https://github.com/morta00/BoxAi" target="_blank" rel="noopener">
-          View Box AI repository →
-        </a>
+        <div class="challenge-links"><a href="#contact">Let’s build something together ↗</a><a data-resume-link href="assets/Mortadha_Ghnimi_Resume.pdf">Download my resume (PDF) ↗</a></div>
       </div>
-    </article>
+    </section>
 
-    <!-- Kaggle -->
-    <article class="project project-split reveal">
-      <div class="project-meta">
-        <span class="tag">Kaggle Competition · 1st Place</span>
-        <h3>Multiclass image classification</h3>
-        <p>
-          I trained three CNNs from scratch on low-resolution RGB images, then ensembled them
-          to place <strong>1st</strong> with <strong>93.4%</strong> test accuracy.
-        </p>
-        <ul class="project-points">
-          <li>Upscaled 16×16 inputs to 32×32 before training</li>
-          <li>WideResNet-28-10, WideResNet-40-4, and ResNet-110 for model diversity</li>
-          <li>CutMix, Mixup, two-round pseudo-labeling, and 15-pass TTA</li>
-          <li>Set the ensemble weights with a grid search on the validation split</li>
-        </ul>
-        <div class="tech-row">
-          <span>TensorFlow</span>
-          <span>Keras</span>
-          <span>CNN</span>
-          <span>Ensemble</span>
-          <span>Computer Vision</span>
-        </div>
-        <a class="text-link" href="https://github.com/morta00/kaggle-multiclass-ensemble" target="_blank" rel="noopener">
-          View repository →
-        </a>
-      </div>
-      <figure class="result-figure leaderboard-proof">
-        <img src="assets/kaggle/leaderboard.png" alt="Kaggle leaderboard showing Mortadha Ghnimi ranked first with a score of 0.934" loading="lazy">
-        <figcaption>Competition leaderboard · 1st place · score 0.934</figcaption>
-      </figure>
-    </article>
+    <section class="contact-shell" id="contact" aria-labelledby="contact-title"><div class="wrap contact"><div class="contact-copy"><p class="section-label">Let’s connect</p><h2 id="contact-title">Your next challenge.<br><span>Let’s build it together.</span></h2><p>I build AI applications, evaluate machine learning models, and turn research into working systems. If that fits your team, I’d love to talk.</p><a class="contact-email" href="mailto:ghnimim@mail.gvsu.edu">ghnimim@mail.gvsu.edu <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://www.linkedin.com/in/mortadha-ghnimi-021183252/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/morta00" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a data-resume-link href="assets/Mortadha_Ghnimi_Resume.pdf">Download resume (PDF) ↗</a></div></div><aside class="contact-note"><div class="contact-monogram" aria-hidden="true"><img src="assets/brand/mg-monogram.svg" alt="" width="94" height="58"></div><p>Mortadha Ghnimi</p><span>AI/ML Engineer<br>Graduate Researcher</span><div class="contact-location"><span aria-hidden="true">◎</span> Grand Rapids, Michigan</div><a href="#work">Explore my work ↑</a></aside></div></section>
 
-    <!-- Healthcare fraud -->
-    <article class="project project-split reveal">
-      <div class="project-meta">
-        <span class="tag">Applied ML · Data Mining</span>
-        <h3>Healthcare fraud detection</h3>
-        <p>
-          Fraud detection for medical insurance claims, tuned around the cost of a wrong decision
-          rather than raw accuracy.
-        </p>
-        <div class="stat-chips">
-          <div class="stat-chip">
-            <span class="stat-chip-value">0.935</span>
-            <span class="stat-chip-label">ROC-AUC</span>
-          </div>
-          <div class="stat-chip">
-            <span class="stat-chip-value">&gt;99%</span>
-            <span class="stat-chip-label">Cost savings</span>
-          </div>
-          <div class="stat-chip">
-            <span class="stat-chip-value">74</span>
-            <span class="stat-chip-label">Features</span>
-          </div>
-          <div class="stat-chip">
-            <span class="stat-chip-value">4</span>
-            <span class="stat-chip-label">Models compared</span>
-          </div>
-        </div>
-        <ul class="project-points">
-          <li>Benchmarked Logistic Regression, Random Forest, Gradient Boosting, and a neural network — GBM won</li>
-          <li>Engineered 74 provider-level features from claims, beneficiaries, and reimbursement patterns</li>
-          <li>Added a cost-sensitive Bayesian decision layer to minimize financial loss</li>
-          <li>Handled severe class imbalance with strategic undersampling</li>
-        </ul>
-        <div class="tech-row">
-          <span>Python</span>
-          <span>scikit-learn</span>
-          <span>Imbalanced learning</span>
-          <span>Feature engineering</span>
-        </div>
-        <p class="project-context">
-          Team course project adapting Shi et al. (2023) to the Kaggle Healthcare Provider Fraud Detection dataset.
-          I contributed to modeling, evaluation, and analysis.
-        </p>
-        <a class="text-link" href="https://github.com/SoltanaMohamedIheb/DataMiningClassGroup15" target="_blank" rel="noopener">
-          View team repository →
-        </a>
-      </div>
-      <div class="media-slot">
-        <figure class="result-figure">
-          <img src="assets/fraud/roc-curves.png" alt="ROC curves comparing logistic regression, random forest, gradient boosting, and neural network fraud models" loading="lazy">
-          <figcaption>Model comparison · GBM AUC 0.935</figcaption>
-        </figure>
-        <figure class="result-figure">
-          <img src="assets/fraud/feature-importance.png" alt="Top 20 feature importances for the gradient boosting healthcare fraud model" loading="lazy">
-          <figcaption>Top features driving fraud predictions</figcaption>
-        </figure>
-      </div>
-    </article>
+    <footer class="wrap footer"><p>© <span id="year"></span> Mortadha Ghnimi</p><p>AI/ML Engineer · Graduate Researcher</p></footer>
+  </main>
 
-  </section>
-
-  <section id="experience" class="section section-alt">
-    <p class="section-label">Experience</p>
-    <h2 class="section-title">Where the work happened</h2>
-    <div class="timeline">
-      <article class="timeline-item reveal">
-        <p class="when">Jan 2026 — Present</p>
-        <h3>Graduate Research Assistant</h3>
-        <p class="where">Grand Valley State University · Remote sensing &amp; forest health</p>
-        <p>Building NDVI time-series pipelines and ML baselines for vegetation stress detection from satellite imagery under Dr. Rahat Ibn Rafiq.</p>
-      </article>
-      <article class="timeline-item reveal">
-        <p class="when">Jan — May 2025</p>
-        <h3>AI &amp; Mobile Development Intern</h3>
-        <p class="where">Smart It Partner · Tunis</p>
-        <p>Shipped Box AI (RAG coach), pedometer metrics, profile analytics, and recommendation features inside the GymBox React Native production app.</p>
-      </article>
-      <article class="timeline-item reveal">
-        <p class="when">Aug — Nov 2023</p>
-        <h3>Technical Support Intern</h3>
-        <p class="where">Tunisie Télécom · Bizerte</p>
-        <p>Security diagnostics across 50+ network nodes and 15+ GB of daily traffic; anomaly baselines accelerated detection of abnormal behavior by 15%.</p>
-      </article>
-    </div>
-
-    <div class="edu-grid">
-      <article class="edu-card reveal">
-        <p class="when">Jan 2026 — Present</p>
-        <h3>M.S. Artificial Intelligence</h3>
-        <p class="where">Grand Valley State University · Grand Rapids, MI</p>
-        <p>Merit-based Graduate Assistantship. Coursework: Machine Learning, Data Mining, Computer Vision, Generative AI, MLOps, Cloud App Development, High-Performance Computing.</p>
-      </article>
-      <article class="edu-card reveal">
-        <p class="when">2022 — 2025</p>
-        <h3>B.S. Computer Science</h3>
-        <p class="where">Faculty of Science of Bizerte · Tunisia</p>
-        <p><strong>Top-ranked student across all years</strong> of the Bachelor's program — awarded a Graduate Assistantship at GVSU on merit.</p>
-      </article>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <p class="section-label">About</p>
-    <div class="about-layout">
-      <h2 class="section-title">A little about me</h2>
-      <div class="about-copy">
-        <p>
-          I’m an MS Artificial Intelligence student at Grand Valley State University, where I work as a
-          graduate research assistant on satellite-based forest health. Before that I finished top of my
-          class in Computer Science at the Faculty of Science of Bizerte and built a RAG assistant that
-          runs in a live fitness app.
-        </p>
-        <p>
-          My work sits around computer vision, retrieval-augmented generation, and remote sensing.
-          The part I enjoy most is what happens after training: evaluating honestly, and figuring out
-          what breaks once real users and real data show up.
-        </p>
-        <div class="availability">
-          <p class="availability-title">Available for AI / ML internships</p>
-          <ul class="availability-list">
-            <li><strong>Start:</strong> Summer &amp; Fall 2026 (plus future terms through 2027)</li>
-            <li><strong>Work authorization:</strong> F-1 student · CPT eligible — no sponsorship needed to intern</li>
-            <li><strong>Location:</strong> Grand Rapids, MI · open to US relocation &amp; remote</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="skills reveal">
-      <div>
-        <h4>Languages</h4>
-        <p>Python · SQL · TypeScript · Java</p>
-      </div>
-      <div>
-        <h4>ML &amp; Deep Learning</h4>
-        <p>PyTorch · TensorFlow · Keras · scikit-learn · CNNs · Computer Vision · Ensembling</p>
-      </div>
-      <div>
-        <h4>GenAI &amp; LLMs</h4>
-        <p>RAG · FAISS · Hugging Face · Gemma / LLMs · Prompt engineering · Model evaluation</p>
-      </div>
-      <div>
-        <h4>Data &amp; MLOps</h4>
-        <p>Pandas · NumPy · FastAPI · Docker · Git · Google Earth Engine · REST APIs</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section contact">
-    <p class="section-label">Contact</p>
-    <h2 class="section-title">Get in touch</h2>
-    <p class="section-lead">I’m looking for AI / ML internships at US companies and I’m glad to walk through any of these projects in detail.</p>
-    <div class="contact-row">
-      <a href="mailto:ghnimim@mail.gvsu.edu">ghnimim@mail.gvsu.edu</a>
-      <a href="https://www.linkedin.com/in/mortadha-ghnimi-021183252/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/morta00" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://github.com/morta00/BoxAi" target="_blank" rel="noopener">Box AI repo</a>
-      <a href="https://github.com/morta00/kaggle-multiclass-ensemble" target="_blank" rel="noopener">Kaggle repo</a>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>© 2026 Mortadha Ghnimi · <a href="https://morta00.github.io/">morta00.github.io</a></p>
-  </footer>
-
-  <script src="js/main.js?v=5"></script>
+  <script src="js/site.config.js"></script>
+  <script src="js/main.js?v=6"></script>
+  <script src="js/connect-four.js?v=2"></script>
+  <script src="js/career-fair.js?v=5"></script>
 </body>
 </html>
